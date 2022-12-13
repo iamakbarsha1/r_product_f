@@ -1,3 +1,13 @@
+# Credentials
+
+## Login with the below credentials!
+
+### `email: akbarsha@gmail.com`
+
+### `password: akbarSha`
+
+The gif in the login page need to be updated by UI/UX Team
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
