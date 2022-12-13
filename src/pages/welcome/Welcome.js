@@ -24,9 +24,9 @@ const Welcome = () => {
           className="flex items-center justify-center"
           onClick={onBackToLoginHandler}
         >
-          <div className="ml-1 mt-3 text-gray-400 underline underline-offset-2 cursor-pointer">
+          <button className="ml-1 mt-3 text-gray-400 underline underline-offset-2">
             Back to login
-          </div>
+          </button>
         </section>
       </main>
     </main>
