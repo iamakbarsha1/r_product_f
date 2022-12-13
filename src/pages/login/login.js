@@ -16,18 +16,19 @@ const Login = () => {
 
   const onLoginHandler = (e) => {
     e.preventDefault();
-    if (email === "" || password === "") {
-      toast.error("All fields required!");
-    }
-    if (email === "akbarsha@gmail.com" && password === "akbarSha") {
-      localStorage.setItem("email", email);
-      localStorage.setItem("password", password);
-      toast.success("Welcome Akbar_Sha!");
-      setEmail("");
-      setPassword("");
-      navigate("/welcome");
+    if (email !== "" && password !== "") {
+      if (email === "akbarsha@gmail.com" && password === "akbarSha") {
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+        toast.success("Welcome Akbar_Sha!");
+        setEmail("");
+        setPassword("");
+        navigate("/welcome");
+      } else {
+        toast.error("Invalid Credentials!");
+      }
     } else {
-      toast.error("Invalid Credentials!");
+      toast.error("All fields required!");
     }
   };
 
