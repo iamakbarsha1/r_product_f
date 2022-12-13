@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Modal */
+  .modal {
+    @apply w-full h-full flex items-center justify-center;
+  }
+
+  /* Input Tag */
+  .inputTag {
+    @apply px-3 py-3 w-full rounded-full border border-gray-300 focus:border-primaryGradient1 outline-none;
+  }
+  /* Google_Sign_in_Button */
+  #Google_Sign_in_Button {
+    @apply mb-5 mt-4 p-3 w-full rounded-full border border-gray-300;
+  }
+
+  /* Icons */
+  .iconCon {
+    @apply flex items-center justify-center;
+  }
+  .googleIcon {
+    @apply h-5 w-5;
+  }
+  .openEyeIcon {
+    @apply h-5 w-5 text-gray-300;
+  }
+  .closeEyeIcon {
+    @apply h-5 w-5 text-gray-300;
+  }
+  .arrowLeftIcon {
+    @apply h-7 w-7 text-gray-300;
+  }
+}
